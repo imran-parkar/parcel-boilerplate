@@ -1,0 +1,29 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir prod"
+  },
+  "keywords": [],
+  "author": "Imran Parkar",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.3",
+    "parcel-bundler": "latest",
+    "sass": "latest"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": ["last 2 versions"]
+      },
+      "postcss-modules": {
+        "generateScopedName": "[name]_[local]_[hash:base64:5]"
+      }
+    }
+  }
+}
